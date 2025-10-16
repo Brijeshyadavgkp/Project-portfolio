@@ -1,0 +1,304 @@
+/* ===============================
+   GLOBAL RESET & BASE STYLES
+================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1e1e1e;
+  background: #f8f9fb;
+  line-height: 1.6;
+}
+
+/* ===============================
+   NAVBAR
+================================*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #0056d2;
+}
+
+/* ===============================
+   HERO SECTION
+================================*/
+.hero {
+  text-align: left;
+  padding: 100px 80px;
+  background: linear-gradient(to bottom right, #ffffff, #f2f5fb);
+  margin-bottom: 60px; /* extra gap below hero */
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.hero h1 span {
+  color: #0046b8;
+}
+
+.hero p {
+  margin: 20px 0 40px;
+  color: #555;
+  max-width: 600px;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-right: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #0046b8;
+  color: white;
+}
+
+.btn-secondary {
+  border: 2px solid #0046b8;
+  color: #0046b8;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+/* ===============================
+   SECTION (GENERAL)
+================================*/
+.section {
+  padding: 80px 80px;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0046b8;
+}
+
+/* ===============================
+   PORTFOLIO SECTION
+================================*/
+#projects {
+  padding-top: 100px;
+  padding-bottom: 140px; /* more space below */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.project-card {
+  background: #f8f9fb;
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+  color: #0046b8;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   ABOUT SECTION
+================================*/
+#about {
+  margin-top: 80px; /* increased gap above */
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list li {
+  background: #f2f5fb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* ===============================
+   CONTACT FORM
+================================*/
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0046b8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 70, 184, 0.3);
+}
+
+.contact-form button {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.form-message {
+  font-weight: 500;
+  margin-top: 10px;
+  height: 20px;
+}
+
+/* ===============================
+   FOOTER
+================================*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0046b8;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   ANIMATIONS
+================================*/
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   DARK MODE
+================================*/
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .section {
+  background-color: #1c1c1c;
+}
+
+.dark-mode .btn-primary {
+  background-color: #1e90ff;
+}
+
+.dark-mode .btn-secondary {
+  border-color: #1e90ff;
+  color: #1e90ff;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #1f1f1f;
+  color: white;
+  border-color: #444;
+}
+
+/* ===============================
+   THEME BUTTON
+================================*/
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================*/
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 40px;
+  }
+
+  .hero,
+  .section {
+    padding: 60px 40px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  #projects {
+    padding-bottom: 100px;
+  }
+
+  #about {
+    margin-top: 60px;
+  }
+}
