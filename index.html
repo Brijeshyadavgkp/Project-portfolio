@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Data Analyst & Business Intelligence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Portfolio </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1><span id="typing"></span></h1>
+    <p>Transforming complex data into actionable insights through advanced analytics, visualization, and machine learning.</p>
+    <div class="buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Get in Touch</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="linkedin.svg" alt="LinkedIn" /></a>
+      <a href="#"><img src="github.svg" alt="GitHub" /></a>
+      <a href="mailto:youremail@example.com"><img src="email.svg" alt="Email" /></a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>I am a passionate Data Analyst specializing in transforming raw data into clear and actionable insights. My expertise includes SQL, Python, Power BI, and Tableau, with a focus on data-driven storytelling.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>SQL</li>
+      <li>Python</li>
+      <li>Power BI</li>
+      <li>Tableau</li>
+      <li>Excel</li>
+      <li>Machine Learning</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section reveal">
+    <h2>Experience</h2>
+    <div class="exp-item">
+      <h3>Data Analyst | ABC Company</h3>
+      <p><strong>2022 - Present</strong></p>
+      <p>Analyzed business performance metrics and developed dashboards to improve decision-making efficiency.</p>
+    </div>
+    <div class="exp-item">
+      <h3>Data Intern | XYZ Analytics</h3>
+      <p><strong>2021 - 2022</strong></p>
+      <p>Assisted in data collection, cleaning, and visualization for client projects.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Coffee Sales Dashboard</h3>
+        <p>Power BI dashboard analyzing coffee sales trends across multiple regions.</p>
+      </div>
+      <div class="project-card">
+        <h3>Customer Churn Prediction</h3>
+        <p>Machine learning model predicting customer churn using Python and SQL.</p>
+      </div>
+      <div class="project-card">
+        <h3>Marketing Campaign Analysis</h3>
+        <p>SQL-based analysis of marketing campaign performance and ROI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to collaborate or discuss data analytics opportunities, feel free to reach out!</p>
+
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="subject" placeholder="Subject" required />
+      </div>
+      <div class="form-group">
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send Message</button>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Brijesh Kumar Yadav | Data Analyst Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
